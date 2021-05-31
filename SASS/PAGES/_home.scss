@@ -1,0 +1,157 @@
+// GENERAL
+header, main, footer{
+    padding: 16px 12px;
+}
+
+body{
+    padding: 16px 50px;
+    background: linear-gradient(to right, map-get($grises, gris2), map-get($grises, gris1) 100%);
+    .container{
+        background-color: map-get($blanco, blancoFondo);
+    }
+}
+
+// HEADER
+.lineaHorizontal{
+    border-top: 1px solid map-get($grises, gris2);
+    margin: 0;
+}
+
+// Dark Mode
+.tema{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+// MAIN
+// Tarjetas Grandes
+.tarjeta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: map-get($grises , gris1);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    // Facebook
+    &__facebook{
+        &::before{
+            content: "";
+                display: inline-block;
+                width: 15px;
+                height: 15px;
+                background: url("/img/facebook.svg");
+                background-size: 100%;
+                background-position: center center;
+                background-repeat: no-repeat;
+                margin-right: .5rem;
+        }
+    }
+    // Twitter
+    &__twitter{
+        &::before{
+            content: "";
+                display: inline-block;
+                width: 15px;
+                height: 15px;
+                background: url("/img/twiter.svg");
+                background-size: 100%;
+                background-position: center center;
+                background-repeat: no-repeat;
+                margin-right: .5rem;
+        }
+    }
+    // Instagram
+    &__instagram{
+        &::before{
+            content: "";
+                display: inline-block;
+                width: 15px;
+                height: 15px;
+                background: url("/img/instagram.svg");
+                background-size: 100%;
+                background-position: center center;
+                background-repeat: no-repeat;
+                margin-right: .5rem;
+        }
+    }
+    // Youtube
+    &__youtube{
+        &::before{
+            content: "";
+                display: inline-block;
+                width: 15px;
+                height: 15px;
+                background: url("/img/youtube.svg");
+                background-size: 100%;
+                background-position: center center;
+                background-repeat: no-repeat;
+                margin-right: .5rem;
+        }
+    }
+    &__numero{
+    }
+    &__seguidores{
+    }
+    &__seccionArriba{
+        &::before{
+            content: "";
+                display: inline-block;
+                width: 12px;
+                height: 12px;
+                background: url("../img/iconos/flecha_arriba.svg");
+                background-size: 100%;
+                background-position: center center;
+                background-repeat: no-repeat;
+                margin-right: .5rem;
+        }
+    }
+    &__seccionAbajo{
+        &::before{
+            content: "";
+                display: inline-block;
+                width: 12px;
+                height: 12px;
+                background: url("../img/iconos/flecha_abajo.svg");
+                background-size: 100%;
+                background-position: center center;
+                background-repeat: no-repeat;
+                margin-right: .5rem;
+        }
+    }
+}
+
+
+// DESKTOP
+@media only screen and (min-width: map-get($breakpoints, desktop)){
+ // General
+    body{
+        padding: 0;
+        background-color: map-get($blanco, fondoBlanco);
+    }
+    // HEADER
+    header{
+        display: flex;
+        justify-content: space-between;
+    }
+    .caja2{
+        flex-basis: 150px;
+        align-self: center;
+    }
+    .lineaHorizontal{
+        display: none;
+    }
+    // MAIN
+    main{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .overview{
+        align-self: flex-start;
+    }
+}
+
+   

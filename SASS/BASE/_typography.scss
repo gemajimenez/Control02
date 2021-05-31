@@ -1,0 +1,78 @@
+// FONT-FACE
+@font-face {
+    font-family: "RobotoRegular";
+    src: url(/font/RobotoRegular.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: "RobotoBold";
+    src: url(/font/RobotoBold.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: "RobotoLight";
+    src: url(/font/RobotoLight.woff2) format("woff2");
+    
+
+@font-face {
+    font-family: "RobotoThin";
+    src: url(/font/RobotoThin.woff2) format("woff2");
+}
+
+
+
+// HEADER
+.titulo{
+    font-family: $fontFamilyBold;
+    font-size: $fontTitle;
+}
+
+.subtitulo{
+    font-family: $fontFamily;
+    font-size: $fontSize;
+    color: map-get($grises, gris2);
+}
+
+.tema{
+    &__darkMode{
+        color: map-get($grises, gris2);
+    }
+}
+
+
+
+
+// MAIN
+// TARJETAS
+.tarjeta{
+    &__facebook, &__twitter, &__instagram, &__youtube{
+        font-family: $fontFamily;
+        font-size: $fontSize;
+    }
+    &__numbero{
+        font-family: $fontFamilyBold;
+        font-size: $fontNumber;
+    }
+    &__seguidores{
+        font-family: $fontFamilyLight;
+        font-size: $fontFollowers;
+        color: map-get($grises, gris2);
+    }
+    &__seccionArriba{
+        font-family: $fontFamilyBold;
+        font-size: $fontToday;
+        color: map-get($verde, today);
+    }
+    &__seccionAbajo{
+        font-family: $fontFamilyBold;
+        font-size: $fontToday;
+        color: map-get($rojo, today);
+    }
+}
+
+// Overview
+.overview{
+    font-family: $fontFamilyBold;
+    font-size: $fontFollowers;
+    color: map-get($grises, gris3);
+}
